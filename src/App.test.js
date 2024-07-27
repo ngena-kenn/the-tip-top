@@ -1,30 +1,22 @@
-
-import App from './App.js';
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
+import Acceuil from './pages/acceuil';
 
+test('renders the main header', () => {
+  render(<Acceuil />);
+  const headerElement = screen.getByText(/tenter de gagnez un de ces lots/i);
+  expect(headerElement).toBeInTheDocument();
+});
 
-test('renders SumComponent and calculates sum correctly', () => {
-  render(<App />);
+test('renders the play button', () => {
+  render(<Acceuil />);
+  const playButton = screen.getByText(/cliquer ici pour Jouer/i);
+  expect(playButton).toBeInTheDocument();
+});
 
-  const input1 = screen.getByPlaceholderText('Premier entier');
-  const input2 = screen.getByPlaceholderText('Deuxième entier');
-  const button = screen.getByText('Calculer');
-
-  // Vérifiez que les entrées et le bouton sont rendus
-  expect(input1).toBeInTheDocument();
-  expect(input2).toBeInTheDocument();
-  expect(button).toBeInTheDocument();
-
-  // Simulez la saisie des valeurs dans les champs de texte
-  fireEvent.change(input1, { target: { value: '5' } });
-  fireEvent.change(input2, { target: { value: '3' } });
-
-  // Cliquez sur le bouton pour calculer la somme
-  fireEvent.click(button);
-
-  // Vérifiez que le résultat est affiché correctement
-  const result = screen.getByText('La somme est : 8');
-  expect(result).toBeInTheDocument();
+test('renders the newsletter form', () => {
+  render(<Acceuil />);
+  const emailInput = screen.getByPlaceholderText(/Votre email/i);
+  expect(emailInput).toBeInTheDocument();
 });
