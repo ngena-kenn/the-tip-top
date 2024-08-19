@@ -13,7 +13,7 @@ import { selectIsAdmin } from "../store/auth/authReducer";
 const Account = () => {
     const dispatch = useDispatch();
     const userProfile = useSelector((state) => state.profile.userProfile);
-    const [isProfileUpdated, setIsProfileUpdated] = useState(false);
+    const [setIsProfileUpdated] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {

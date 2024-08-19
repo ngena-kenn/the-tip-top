@@ -2,7 +2,7 @@ import './assets/css/App.css';
 import './assets/css/acceuil.scss';
 import './assets/css/SignIn.css';
 import './assets/css/SignUp.css';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { } from 'react-router-dom';
 import AuthLayout from './layouts/auth';
 import AdminLayout from './layouts/admin';

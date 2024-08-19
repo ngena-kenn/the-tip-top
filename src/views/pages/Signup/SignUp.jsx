@@ -45,7 +45,7 @@ const SignUp = () => {
   };
 
   const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
-  const [isPasswordConfirmed, setIsPasswordConfirmed] = useState(false);
+  const [setIsPasswordConfirmed] = useState(false);
 
   const handleChange = (e) => {
     setFormValues({

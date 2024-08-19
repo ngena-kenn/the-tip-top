@@ -4,7 +4,6 @@ import {
   Button,
   Flex,
   Icon,
-  Image,
   Link,
   Menu,
   MenuButton,
@@ -22,7 +21,7 @@ import { SidebarResponsive } from 'components/sidebar/Sidebar';
 import PropTypes from 'prop-types';
 // Assets
 
-import { MdNotificationsNone, MdInfoOutline } from 'react-icons/md';
+import { MdInfoOutline } from 'react-icons/md';
 import { IoMdMoon, IoMdSunny } from 'react-icons/io';
 import { FaEthereum } from 'react-icons/fa';
 import route from 'routes';
@@ -40,7 +39,6 @@ export default function HeaderLinks(props) {
   const navbarIcon = useColorModeValue('gray.400', 'white');
   let menuBg = useColorModeValue('white', 'navy.800');
   const textColor = useColorModeValue('secondaryGray.900', 'white');
-  const textColorBrand = useColorModeValue('brand.700', 'brand.400');
   const ethColor = useColorModeValue('gray.700', 'white');
   const borderColor = useColorModeValue('#E6ECFA', 'rgba(135, 140, 189, 0.3)');
   const ethBg = useColorModeValue('secondaryGray.300', 'navy.900');
@@ -49,7 +47,7 @@ export default function HeaderLinks(props) {
     '14px 17px 40px 4px rgba(112, 144, 176, 0.18)',
     '14px 17px 40px 4px rgba(112, 144, 176, 0.06)',
   );
-  const borderButton = useColorModeValue('secondaryGray.500', 'whiteAlpha.200');
+
 
 
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);

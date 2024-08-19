@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 //import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
@@ -9,7 +9,7 @@ import axios from "axios";
 const FormAndPopin = () => {
     const [inputValue, setInputValue] = useState('');
     const [showPopin, setShowPopin] = useState(false);
-    const [popinContent, setPopinContent] = useState(null);
+    const [setPopinContent] = useState(null);
     const [errorMessage, setErrorMessage] = useState('');
     const navigate = useNavigate();
     //const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
@@ -63,11 +63,7 @@ const FormAndPopin = () => {
 
     };
 
-    const handleShowConditions = (event) => {
-        event.preventDefault();
-        setPopinContent('text');
 
-    };
 
     const handleClosePopin = () => {
         setShowPopin(false);

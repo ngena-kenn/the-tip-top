@@ -2,16 +2,16 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUserProfile } from "../store/profile/profileActions";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+
 
 
 const SignUp = () => {
     const dispatch = useDispatch();
     const userProfile = useSelector((state) => state.profile.userProfile);
-    const [isProfileUpdated, setIsProfileUpdated] = useState(false);
+    const [setIsProfileUpdated] = useState(false);
 
     useEffect(() => {
         dispatch(fetchUserProfile());
