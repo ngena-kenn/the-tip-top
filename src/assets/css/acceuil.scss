@@ -301,7 +301,7 @@
   }
 
   img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -412,7 +412,6 @@
 }
 
 .startgame {
-  display: flex;
   justify-content: space-between;
   background-position: center;
   background-repeat: no-repeat;
@@ -583,5 +582,11 @@
 .chakra-menu__menu-button {
   .css-ivaog9 {
     background-color: #696214 !important;
+  }
+}
+
+.listUser {
+  .css-lwffq9 {
+    padding-top: 10rem !important;
   }
 }

@@ -12,6 +12,7 @@ import profileReducer from './views/store/profile/profileReducer';
 import { configureStore } from '@reduxjs/toolkit';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -31,3 +32,5 @@ root.render(
     <ToastContainer />
   </Provider>
 );
+
+serviceWorkerRegistration.register();

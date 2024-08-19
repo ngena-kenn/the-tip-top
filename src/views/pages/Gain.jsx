@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 //import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
+import image1 from "../../assets/img/coffret-découverte-39€.jpg";
+import image2 from "../../assets/img/coffret-découverte-69€.webp";
+import image3 from "../../assets/img/infusion.webp";
+import image4 from "../../assets/img/infuseur-nomade-the.jpg";
 
 
 
@@ -9,7 +13,6 @@ import axios from "axios";
 const FormAndPopin = () => {
     const [inputValue, setInputValue] = useState('');
     const [showPopin, setShowPopin] = useState(false);
-    const [setPopinContent] = useState(null);
     const [errorMessage, setErrorMessage] = useState('');
     const navigate = useNavigate();
     //const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
@@ -59,7 +62,6 @@ const FormAndPopin = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         fetchUserGain();
-        setPopinContent('image');
 
     };
 
@@ -73,7 +75,19 @@ const FormAndPopin = () => {
     const handleRecuperation = () => {
         navigate("/admin/default");
     };
-
+    const getImageForValue = (valeur) => {
+        switch (valeur) {
+            case '100g':
+                return image3;
+            case '39€':
+                return image1;
+            case '69€':
+                return image2
+            case null:
+            default:
+                return image4;
+        }
+    };
 
     return (
         <div className="gain-container">
@@ -92,8 +106,8 @@ const FormAndPopin = () => {
                 <div className="popin">
                     <div className="popin-content">
                         <button className="close-button" onClick={handleClosePopin}>Fermer</button>
-                        <div><p className="explosion-text">Félicitation tu a gagner un{userGain.participate.gain.TypeDeGain} </p>
-                            <img src="https://via.placeholder.com/150" alt="Sample" />
+                        <div><p className="explosion-text">Félicitation tu a gagner un {userGain.participate.gain.TypeDeGain} </p>
+                            <img src={getImageForValue(userGain.participate.gain.valeur)} alt="Sample" />
                             <button className='botton-popup' onClick={handleRecuperation}>Obtenir</button>
                         </div>
                     </div>

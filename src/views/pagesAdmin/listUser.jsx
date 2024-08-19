@@ -34,7 +34,7 @@ const ListUser = () => {
     }, []);
 
     return (
-        <>
+        <div className="listUser">
             {listUser.length > 0 ? (
                 <Box w="100%" p={4} overflowX="auto">
                     <Table variant="simple" size="md">
@@ -61,7 +61,7 @@ const ListUser = () => {
             ) : (
                 <Text>Aucun utilisateur trouvé.</Text>
             )}
-        </>
+        </div>
     );
 };
 

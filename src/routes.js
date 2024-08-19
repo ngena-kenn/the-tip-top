@@ -16,6 +16,7 @@ import AccueilAdmin from 'views/pagesAdmin/acceuil';
 import ListUser from 'views/pagesAdmin/listUser';
 import ListGain from 'views/pagesAdmin/listGain';
 import NewGame from 'views/pagesAdmin/newGame';
+import GenerateurCode from 'views/pagesAdmin/generateurCode';
 import { selectIsAdmin } from "./views/store/auth/authReducer";
 import { useSelector } from "react-redux";
 
@@ -81,6 +82,13 @@ const routeAdmin = [
     path: '/new-game',
     icon: <Icon as={MdHistory} width="20px" height="20px" color="inherit" />,
     component: <NewGame />,
+  },
+  {
+    name: 'Guichet Code',
+    layout: '/admin',
+    path: '/new-code',
+    icon: <Icon as={MdHistory} width="20px" height="20px" color="inherit" />,
+    component: <GenerateurCode />,
   },
 ];
 
