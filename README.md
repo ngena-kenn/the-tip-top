@@ -1,83 +1,115 @@
-# React Project with Carousel and Newsletter Signup
+# [Horizon UI ⚡️](https://horizon-ui.com/horizon-ui-chakra) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://horizon-ui.com/&text=Check%20Horizon%20UI,%20the%20trendiest%20open-source%20admin%20template%20for%20Chakra%20UI%20&%20React!)
 
-## Description
+![version](https://img.shields.io/badge/version-2.0.0-brightgreen.svg)
+![license](https://img.shields.io/badge/license-MIT-blue.svg)
+[![GitHub issues open](https://img.shields.io/github/issues/horizon-ui/horizon-ui-chakra.svg?maxAge=2592000)](https://github.com/horizon-ui/horizon-ui-chakra/issues?q=is%3Aopen+is%3Aissue)
 
-Ce projet est une application React simple qui comprend un carrousel d'images, une option pour s'inscrire à une newsletter et un bouton pour jouer à un jeu. Il utilise des composants React pour structurer le frontend et intègre des tests unitaires pour assurer la qualité du code.
+<p>&nbsp;</p>
 
-## Fonctionnalités
+[<img alt="Horizon UI" src="https://i.ibb.co/fdyTwz1/introduction-image-2.png" /> ](https://github.com/horizon-ui/horizon-ui-chakra)
 
-- Carrousel d'images automatique
-- Formulaire d'inscription à une newsletter
-- Bouton d'interaction pour jouer
-
-## Structure du Projet
-
-- `src/components`: Composants React, y compris le Carrousel
-- `/`: Tests unitaires pour les composants
-- `public`: Fichiers statiques et HTML de base
-
-## Installation
-
-Pour installer et démarrer le projet localement, suivez les étapes ci-dessous:
-
-1. **Clonez le dépôt**:
-
-   ```bash
-   git clone https://github.com/ngena-kenn/the-tip-top.git
-   cd votre-projet
+<p>&nbsp;</p>
 
 
+Get started and build your dream web app with Horizon UI, the most trendiest &
+innovative Open Source Admin Template for Chakra UI & React!
 
-### Installez les dépendances:
+---
 
-Assurez-vous d'avoir Node.js et npm installés, puis exécutez:
+### Introduction
 
+Designed for those who like modern UI elements and beautiful websites. Made of
+hundred of elements, designed blocks and fully coded pages, Horizon UI is ready
+to help you create stunning websites and webapps.
+
+Save hundreds of hours trying to create and develop a dashboard from scratch.
+The fastest, most responsive & trendiest dashboard is here. Seriously.
+
+With Horizon UI you will find many examples for pages like NFTs Pages,
+Authentication Pages, Profile and so on. Just choose between a Basic Design or a
+cover and you are good to go!
+
+### 🎉 [NEW] Horizon UI Components
+All the main components from both versions, this will help you to see and interact with all & the latest added components of Horizon (also, new components are on the way, stay tuned)! ⚡️
+<a href="https://horizon-ui.com/components/?ref=readme-horizon" target="_blank">See all components</a>
+
+
+### Documentation
+
+Each element is well presented in a very complex documentation. You can read
+more about the <a href="https://horizon-ui.com/documentation/docs/introduction?ref=readme-horizon" target="_blank">documentation
+here.</a>
+
+### Quick Start
+
+Install Horizon UI by running either of the following:
+
+- Install NodeJS LTS from
+  [NodeJs Official Page](https://nodejs.org/en/?ref=horizon-documentation)
+  (NOTE: Product only works with LTS version)
+
+Clone the repository with the following command:
+
+```bash
+git clone https://github.com/horizon-ui/horizon-ui-chakra.git
+```
+
+Run in terminal this command:
+
+```bash
 npm install
+```
 
+Then run this command to start your local server
 
- 
-### `npm start`
-
-
+```bash
 npm start
-L'application sera accessible à l'adresse http://localhost:3000.
+```
 
-Configuration des Logs et de l'Analyse
-Logs Applicatifs
+### Example Pages
 
+If you want to get inspiration or just show something directly to your clients,
+you can jump start your development with our pre-built example pages. You will
+be able to quickly set up the basic structure for your web project. View
+<a href="https://horizon-ui.com/horizon-ui-chakra/?ref=readme-horizon" target="_blank">example
+pages here.</a>
 
-### intégration avec Logstash et Elasticsearch
-Configurer Logstash:
+### Versions
 
-Créez un fichier de configuration Logstash (logstash.conf) pour lire les logs depuis les fichiers et les envoyer à Elasticsearch.
-Exécuter Logstash:
+| Free Version                                                                                                       | PRO Version                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| [![Horizon UI](https://i.ibb.co/fdyTwz1/introduction-image-2.png)](https://www.horizon-ui.com/?ref=readme-horizon) | [![Horizon UI PRO](https://i.ibb.co/R6jFKRM/introduction-image-1.png)](https://www.horizon-ui.com/pro?ref=readme-horizon) |
 
-bin/logstash -f /path/to/logstash.conf
+### Figma Version
 
-Jest et React Testing Library sont utilisés pour les tests unitaires.
+Horizon UI is available in Figma format as well! Check it out on Figma
+Community! 🎨
+[See the Horizon UI Figma design files](https://bit.ly/horizon-figma)
 
+### Reporting Issues
 
-### Exécution des tests
-Pour exécuter les tests, utilisez la commande suivante:
+We use GitHub Issues as the official bug tracker for the Horizon UI. Here are
+some advices for our users that want to report an issue:
 
+1. Make sure that you are using the latest version of the Horizon UI Dashbaord.
+   Check the CHANGELOG from your dashboard on our
+   [CHANGE LOG File](https://github.com/horizon-ui/horizon-ui-chakra/blob/main/CHANGELOG.md?ref=readme-horizon).
+2. Providing us reproducible steps for the issue will shorten the time it takes
+   for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you
+   encountered the issue might help.
 
-npm test
-Les tests couvrent les composants de l'application et vérifient des fonctionnalités clés comme le rendu du carrousel et le formulaire d'inscription.
+---
 
-### Intégration Continue / Déploiement Continu (CI/CD)
-Configuration du Pipeline GitHub Actions
-Le projet utilise GitHub Actions pour automatiser les tests à chaque push sur la branche main.
+### Community
 
-Configuration du Workflow
-Le fichier .github/workflows/test.yml définit les étapes du pipeline:
+Connect with the community! Feel free to ask questions, report issues, and meet
+new people that already use Horizon UI!
 
-### Installation des dépendances: Utilise actions/setup-node pour installer Node.js et npm.
-Exécution des tests: Lance les tests unitaires avec Jest.
-Contribution
-Les contributions sont les bienvenues! Pour contribuer:
+💬 [Join the #HorizonUI Discord Community!](https://discord.gg/f6tEKFBd4m)
 
-### Fork le dépôt
-Créez une branche feature (git checkout -b feature/nom-de-la-feature)
-Commitez vos changements (git commit -m 'Ajout d'une nouvelle fonctionnalité')
-Poussez vers la branche (git push origin feature/nom-de-la-feature)
-Ouvrez une pull request
+### Copyright and license
+
+⭐️ [Copyright 2023 Simmmple ](https://www.simmmple.com/?ref=readme-horizon)
+
+📄 [Horizon UI License](https://www.simmmple.com/licenses?ref=readme-horizon)

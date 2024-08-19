@@ -1,0 +1,58 @@
+.sign_up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 132px;
+}
+
+
+.form_signup {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 500px;
+}
+
+.sign_up_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_up_form-label {
+    font-weight: bold;
+}
+
+.sign_up_form input {
+    background-color: rgb(224, 224, 224);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.sign_up_form-submit {
+    border: none;
+    cursor: pointer;
+    background-color: #836349FF;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sign_up_account {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sign_up_account-btn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}

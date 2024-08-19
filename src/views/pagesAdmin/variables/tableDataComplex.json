@@ -1,0 +1,11 @@
+[
+  {
+    "message": "statistiques du jeux concour",
+    "nameOfGame": "game-tea",
+    "stats": {
+      "numberOfGainWiner": 27,
+      "numberOfTicketsUse": 3,
+      "totalTickerOfGame": 30
+    }
+  }
+]

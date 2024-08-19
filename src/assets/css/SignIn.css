@@ -1,0 +1,97 @@
+.sign_in {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    background: linear-gradient(318deg, rgb(200 209 167), rgb(226 224 171));
+
+}
+
+.form_signin {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.sign_in input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sign_in_form_email {
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F4F6FF;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.sign_in_form_email {
+    padding: 10px;
+}
+
+.sign_in_form-label {
+    font-weight: bold;
+}
+
+.sign_in_form-input {
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.sign_in_form_password {
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F4F6FF;
+    border-radius: 10px;
+    width: 400px;
+}
+
+
+.sign_in_form_password {
+    padding: 10px;
+}
+
+.sign_in_form-submit {
+    border: none;
+    cursor: pointer;
+    background-color: #728f7a;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sign_in_image {
+    display: flex;
+    align-items: center;
+    background-color: #c8d1a7;
+    height: 615px;
+    border-top-right-radius: 167px;
+    border-bottom-right-radius: 143px;
+    width: 40%;
+}
+
+
+@media screen and (max-width: 950px) {
+    .sign_in_image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sign_in_form_email {
+        width: 100%;
+    }
+
+    .sign_in_form_password {
+        width: 100%;
+    }
+
+    .form_signin {
+        width: 90%;
+    }
+}
