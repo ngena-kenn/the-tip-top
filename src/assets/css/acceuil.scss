@@ -335,6 +335,43 @@
   }
 }
 
+@media (max-width: 768px) {
+  .gain-container {
+    flex-direction: column;
+    padding: 10px;
+
+    .form-container {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .label-condition {
+      font-size: 30px;
+      padding: 10px;
+      color: white !important;
+    }
+
+    .popin {
+      width: 100%;
+      margin: 1rem auto;
+    }
+
+    .explosion-text {
+      font-size: 18px;
+    }
+
+    .botton-popup {
+      font-size: 16px;
+    }
+  }
+}
+
+
+.css-1wv9e55 {
+  padding-left: 9px !important;
+}
+
 .signup-fond {
   display: flex;
   justify-content: space-between;
@@ -409,6 +446,12 @@
 
 .css-inswfa {
   padding-top: 120px !important;
+}
+
+.css-1wv9e55 {
+  padding: 30px;
+  background: linear-gradient(95deg, rgb(77 102 24 / 76%), #e2d4929c);
+  margin-left: 9px !important;
 }
 
 .startgame {

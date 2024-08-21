@@ -33,7 +33,7 @@ export const registerUser = (prenom, nom, email, password, roles) => async (disp
     });
     toast.success("Merci pour votre inscription ! Vous pouvez maintenant vous connecter.");
   } catch (error) {
-
+    console.error('Erreur lors de la connexion :', error);
   }
 };
 

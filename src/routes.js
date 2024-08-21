@@ -6,6 +6,8 @@ import {
   MdLocationOn,
   MdHistory,
   MdCardGiftcard,
+  MdHome,
+  MdOutlineShoppingCart,
 } from 'react-icons/md';
 
 import Gain from 'views/pages/Gain';
@@ -80,14 +82,14 @@ const routeAdmin = [
     name: 'New Game',
     layout: '/admin',
     path: '/new-game',
-    icon: <Icon as={MdHistory} width="20px" height="20px" color="inherit" />,
+    icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
     component: <NewGame />,
   },
   {
     name: 'Guichet Code',
     layout: '/admin',
     path: '/new-code',
-    icon: <Icon as={MdHistory} width="20px" height="20px" color="inherit" />,
+    icon: <Icon as={MdOutlineShoppingCart} width="20px" height="20px" color="inherit" />,
     component: <GenerateurCode />,
   },
 ];

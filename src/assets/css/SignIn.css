@@ -78,8 +78,13 @@
 
 @media screen and (max-width: 950px) {
     .sign_in_image {
-        display: none;
+        width: 95%;
     }
+
+    .sign_in {
+        display: revert-layer;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -93,5 +98,13 @@
 
     .form_signin {
         width: 90%;
+    }
+
+    .sign_in_image {
+        width: 95%;
+    }
+
+    .sign_in {
+        display: revert-layer;
     }
 }
