@@ -16,16 +16,20 @@ const OrderCard = () => {
                     },
                 }
             );
-            // Assurez-vous que la réponse est un tableau
+
+            // Ajouter une vérification pour voir ce qui est retourné
+            console.log("API Response:", response.data);
+
+            // Vérification supplémentaire si la réponse est bien un tableau
             if (Array.isArray(response.data)) {
                 setlistGain(response.data);
             } else {
-                setlistGain([]); // ou une gestion d'erreur
-                console.error("La réponse de l'API n'est pas un tableau :", response.data);
+                console.error("La réponse de l'API n'est pas un tableau:", response.data);
+                setlistGain([]);  // Ou gérer cela comme vous le souhaitez
             }
         } catch (error) {
             console.error("Erreur lors de la récupération des gains :", error);
-            setlistGain([]); // En cas d'erreur, on peut définir un tableau vide
+            setlistGain([]);  // En cas d'erreur, initialisez avec un tableau vide
         }
     };
 
@@ -60,7 +64,7 @@ const OrderCard = () => {
                     </Card>
                 ))
             ) : (
-                <p>Aucun gain trouvé.</p> // Message à afficher si listGain est vide ou null
+                <p>Aucun gain trouvé.</p>
             )}
         </>
     );
