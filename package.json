@@ -2,6 +2,7 @@
   "name": "the-tip-top",
   "version": "2.0.0",
   "private": true,
+  "proxy": "https://da08-2a02-8429-d781-8701-4d56-3616-330e-2dfd.ngrok-free.app",
   "dependencies": {
     "@babel/preset-react": "^7.18.6",
     "@chakra-ui/icons": "^2.0.19",
